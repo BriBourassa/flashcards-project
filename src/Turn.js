@@ -10,11 +10,12 @@ returnGuess(){
 returnCard(){
     return this.card
 }
-evaluateGuess(){
-    if(this.guess === card.correctAnswer){
+evaluateGuess(playerGuess){
+    if(playerGuess === this.card.correctAnswer){
         return true
-    }
+    } 
     return false
+    
 }
 giveFeedback(){
     if(this.evaluateGuess()){
