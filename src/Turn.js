@@ -14,14 +14,15 @@ evaluateGuess(playerGuess){
     if(playerGuess === this.card.correctAnswer){
         return true
     } 
-    return false
-    
+    return false 
 }
-giveFeedback(){
-    if(this.evaluateGuess()){
+giveFeedback(guess){
+    if(this.evaluateGuess(guess)){
         console.log('correct!')
+        return 'correct!'
     }
     console.log('incorrect!')
+    return 'incorrect!'
 }
 };
 
