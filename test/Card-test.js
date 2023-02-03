@@ -11,12 +11,10 @@ describe('Card', () => {
   })
 
   it('should be a function', () => {
-    const card = new Card();
     assert.isFunction(Card)
   });
 
   it('should be an instance of Card', () => {
-    const card = new Card();
     assert.instanceOf(card, Card)
   }); 
 

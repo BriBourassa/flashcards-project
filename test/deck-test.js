@@ -22,9 +22,6 @@ describe('deck', () => {
     it('should count the cards', () => {
         assert.equal(deck.countCards(), 3)
     })
-
-
-
 });
 
 
